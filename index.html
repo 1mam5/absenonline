@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<script language='JavaScript'>
+var txt="-Jadwal UAS Susulan SMK ITABA-";
+var speed=300;
+var refresh=null;
+function action() { document.title=txt;
+txt=txt.substring(1,txt.length)+txt.charAt(0);
+refresh=setTimeout("action()",speed);}action();
+</script>
+</head>
+<body>
+   <!-- <ul class="nav nav-tabs">
+        <li class="nav-item">
+          <a class="nav-link active" href="#">Active</a>
+          h1>AAA</h1>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+          <h1>BBB</h1>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+          h1>CCC</h1>
+        </li>
+       
+      </ul> -->
+      <ul class="nav nav-tabs" role="tablist">
+        <li class="nav-item">
+          <a class="nav-link active" href="#profile" role="tab" data-toggle="tab">KELAS X-MM-TKR</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#buzz" role="tab" data-toggle="tab">KELAS XI-MM-TKR</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#references" role="tab" data-toggle="tab">KELAS XII-MM-TKR</a>
+        </li>
+      </ul>
+      
+      <!-- Tab panes -->
+      <div class="tab-content">
+        <div role="tabpanel" class="tab-pane fade in active" id="profile"><center>JADWAL KELAS 10</center>
+          <table class="table table-striped">
+            <thead class="thead-dark"><tr><th>No</th><th>Mapel</th><th>Link</th></tr></thead><tbody>
+             <tr><td>1</td><td>PAI-X-MM</td><td><a href="https://forms.office.com/r/pa0GqCiZwN" target="_parent">PAI MM-10</a></td></tr>
+             <tr><td>2</td><td>PAI-X-TKR</td><td><a href="https://forms.office.com/r/XMnyXmrLhY" target="_parent">PAI TKR-10</a></td></tr>
+             <tr><td>3</td><td>BAHASA INDONESIA - X MM&TKR</td><td><a href="https://forms.office.com/r/zsVKygGAJA" target="_parent">BIN-10</a></td></tr>
+             <tr><td>4</td><td>PKN - X MM&TKR</td><td><a href="https://forms.office.com/r/6ZnRARwT7M" target="_parent">PKN-10 MM&TKR</a></td></tr>
+             <tr><td>5</td><td>B INGGRIS - X MM&TKR</td><td><a href="https://forms.office.com/r/XBs9e9RwLX" target="_parent">B INGGRIS-10 MM&TKR</a></td></tr>
+             <tr><td>6</td><td>ASWAJAH - X MM&TKR</td><td><a href="https://forms.office.com/r/Aau9jGS9ns" target="_parent">ASWAJAH-10 MM&TKR</a></td></tr>
+             <!--tr><td>20</td><td>KOSONG</td><td><a href="" target="_parent">KOSONG</a></td></tr-->
+            </tbody></table>        
+        </div>
+        <div role="tabpanel" class="tab-pane fade" id="buzz"><center>JADWAL KELAS 11</center>
+          <table class="table table-striped">
+            <thead class="thead-dark"><tr><th>No</th><th>Mapel</th><th>Link</th></tr></thead><tbody>
+             <tr><td>1</td><td>PAI-XI-MM&TKR</td><td><a href="https://forms.office.com/r/FBEhFJN8Ay" target="_parent">PAI MM-11</a></td></tr>
+             <tr><td>2</td><td>BAHASA INDONESIA - XI MM&TKR</td><td><a href="https://forms.office.com/r/zsVKygGAJA" target="_parent">BIN-11</a></td></tr>
+             <tr><td>3</td><td>PKN - XI MM&TKR</td><td><a href="https://forms.office.com/r/4gzzVSCULj" target="_parent">PKN-11 MM&TKR</a></td></tr>
+             <tr><td>4</td><td>B INGGRIS - XI MM&TKR</td><td><a href="https://forms.office.com/r/4QB6MKRHTY" target="_parent">B INGGRIS-11 MM&TKR</a></td></tr>
+             <!--tr><td>20</td><td>KOSONG</td><td><a href="" target="_parent">KOSONG</a></td></tr-->
+            </tbody></table>
+        </div>
+        <div role="tabpanel" class="tab-pane fade" id="references"><center>JADWAL KELAS 12</center>
+          <table class="table table-striped">
+            <thead class="thead-dark"><tr><th>No</th><th>Mapel</th><th>Link</th></tr></thead><tbody>
+         <!--tr><td>20</td><td>KOSONG</td><td><a href="" target="_parent">KOSONG</a></td></tr-->
+         </tbody></table>
+        </div>
+      </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+
+    
+</html>
